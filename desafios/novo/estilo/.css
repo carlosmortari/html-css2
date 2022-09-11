@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android' ;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'android', cursive;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+/*Header*/
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    background-color: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+header > p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301)
+}
+
+/*Header*/
+
+/*nav*/
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: var(--font-padrao);
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--font-destaque);
+}
+
+/*nav*/
+
+/*main*/
+   /*article*/
+    main {
+        background-color: white;
+        min-width: 300px;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.411);
+        border-bottom-left-radius: 10px ;
+        border-bottom-right-radius: 10px;
+    }
+
+    div.video {
+        background-color: var(--cor5);
+        margin: 0px -20px 0px -20px;
+        padding: 20px;
+        padding-bottom: 57%;
+        position: relative;
+    }
+
+    div.video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+        font-family: var(--font-android);
+        color:var(--cor4)
+        
+    }
+
+    main h2 {
+        font-family: var(--font-android);
+        color: var(--cor4);
+        font-size: 1.3em;
+        font-weight: normal;
+        background-image: linear-gradient(to right, var(--cor1), transparent);
+        text-indent:8px ;
+    }
+
+    main p {
+        margin: 15px 0px 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.1em;
+        line-height: 2em;
+        font-family: var(--font-padrao);
+
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    main img.pequena {
+        display: block;
+        max-width: 350px;
+        margin: auto;
+        
+    }
+
+    a.externo::after {
+        content: '\00A0\1F517';
+
+     }
+     a.externo {
+        background-color: var(--cor2);
+        text-decoration: none;
+        padding: 3px;
+        color: rgb(0, 0, 0);
+        border-radius: 7px;
+     }
+     a.externo:hover {
+        background-color: black;
+        color: white;
+        
+     }
+        
+    
+
+
+   /*article*/
+/*main*/
+
+/*aside*/
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 9px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+    
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+/*aside*/
+
+/*footer*/
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+
+strong.d:hover  {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*footer*/

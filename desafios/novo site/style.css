@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: white;
+    line-height: 1.5em;
+    margin: 0px;
+    
+   
+}
+
+/*header*/
+
+header {
+    text-align: center;
+    margin: 70px auto;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/*header*/
+
+/*nav*/
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    
+}
+
+nav a:hover {
+    background-color: rgb(216, 241, 247);
+    color: rgb(17, 17, 17);
+    padding: 5px;
+    border:1px solid rgb(171, 198, 248);
+    border-radius: 3px;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+/*nav*/
+
+/*main*/
+    /*article*/
+    main {
+      min-width: 250px;
+      max-width: 800px;
+        margin: auto;
+        margin-top: 30px;
+        text-indent: px;
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        padding: 8px;
+        
+        
+    }
+
+    .capa1 {
+        width: 100%;
+
+         
+    }
+     
+    img.livro {
+        display: block;
+        margin: auto;
+        
+        
+    }
+
+    .h33 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 1.7em;
+    }
+
+    .h22 a {
+        color: rgba(4, 61, 61, 0.801);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+
+    .h22 a:hover {
+        text-decoration: underline;
+    }
+
+    .h11 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 2.0em;
+        line-height: 1.2em;
+        text-align: justify;
+        font
+    }
+
+    .p1 {
+        background-color:rgb(40, 150, 170);
+        color:white;
+        width:200px;
+        border-radius:4px;
+        margin-left:10px;
+        text-align:center;
+        padding:3px;
+        font: 1em sans-serif;
+    }
+
+    .p2 {
+        text-align: justify;
+        font-size: 1.2em;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+        text-indent: 20px;
+    }
+
+    /*article*/
+/*main*/
+
+footer {
+    background-color: rgb(6, 22, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+strong:hover {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    
+
+}
