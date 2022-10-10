@@ -11,44 +11,190 @@
         }
 
         table {
-            
-            margin: auto;
-            height: 250px;
-            width: 350px;
-            text-align:center;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        td {
-            border: 2px solid black;
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
         }
 
-        td.hoje {
-            background-color: rgba(0, 100, 0, 0.5);
+        caption {
+            font-size: 1.5em;
             font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            
+        }
+
+        thead, tfoot {
+            background-color: rgba(29, 28, 28, 0.952);
+            color: rgb(223, 219, 219);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(29, 28, 28, 0.952);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color:lightgray;
+            font-weight: bold;
+        }
+
+       
+
+        td.num {
+            text-align: right;
+        }
+
+        td#total {
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+          CAPTION     
+          THEAD
+              TR, TD, TH
+          TBOOY
+              TR, TD, TH
+          TFOOT
+              TR, TD, TH
+    -->
+     
     <table>
-        <tr>
-            <td>01</td>
-            <td>02</td>       
-            <td>03</td>
-            <td>04</td>
-        </tr>
-        <tr>
-            <td>05</td>
-            <td class="hoje">06</td>
-            <td>07</td>
-            <td>08</td>
-        </tr>
-        <tr>
-            <td>09</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-        </tr>
+        <caption>População das Unidades Federativas</caption>
+       <thead> 
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+
+            </tr>
+       </thead>
+       <tbody>
+            <tr>
+               <td>São Paulo</td> 
+               <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 985 284	</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630	</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 674 793	</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 240 580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num"> 7 338 473	</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num"> 7 206 589	</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 153 262	</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 269 995	</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4 108 508	</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">4 059 905	</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 567 234	</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 560 903	</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 365 351	</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 289 290	</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 094 325	</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 839 188	</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 338 474	</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="num">1 815 278	</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 607 363	</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906 876	</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">877 613	</td>
+            </tr>
+            <tr>
+                <td>Romaira</td>
+                <td class="num">652 713	</td>
+            </tr>
+       </tbody>
+       <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td id="total"><strong>213.317.639</strong></td>
+            </tr>
+       </tfoot>
     </table>
 </body>
 </html>
