@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:#282828;
+    --cor2:#1DA87A;
+    --cor3:#17BFB7;
+    --cor4:#F5B81D;
+}
+
+body {
+    background-color: rgba(122, 120, 120, 0.61);
+    margin: 0px;
+}
+/*heder*/
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 50px;
+    
+    }
+
+header > h1 {
+    margin: 0px;
+    padding-top: 50px;
+    font-size: 2.3em;
+    font-variant: small-caps;
+    
+    
+    
+}
+
+header > p {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 1px;
+}
+/*heder*/
+
+/*nav*/
+    nav {
+        background-color: var(--cor3);
+        padding-bottom: 15px;
+        padding-left: 43px;
+        
+    }
+
+    nav  a {
+        color: white;
+        text-decoration: none;
+        margin-right: 30px;
+        padding: 10px;
+        font-family: arial;
+         font-size: 1.1em;
+         border-radius: 10px;
+         transition-duration: 0.3s;
+    }
+
+    nav > a:hover {
+        background-color: #282828;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+/*nav*/
+
+main {
+    max-width:800px ;
+    min-width:400px ;
+    margin: auto;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 8px darkgrey;
+    background-color: white;
+    
+}
+
+main h1 {
+    color: #7e5e0e;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h2 {
+    background-color: var(--cor1);
+    color: white;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+main p {
+    line-height: 30px;
+    font-size: 1.1em;
+    text-indent: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main a img.imagem{
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+main a img.imagem:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+}
+
+main section {
+    height: 300px;
+    width: 100%;
+    background-image: url(imagens/fotografia.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+    
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 4px;
+    width: 200px;
+}
+
+th {
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(51, 50, 50);
+}
+
+td.v {
+    text-align: center;
+    font-weight: bold;
+}
+
+td#total {
+    background-color:rgb(51, 50, 50) ;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #2828284b;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    text-align: center;
+    margin-top: 10px;
+    padding: 2px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
